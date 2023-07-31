@@ -1,45 +1,50 @@
 <!DOCTYPE html>
-<html lang="">
-
+<html lang="es">
 <head>
-  <title>Mi Primer Website - Servicios</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <!-- ... -->
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Primer Website</title>
+  <link rel="stylesheet" href="css/body.css">
+  <link rel="stylesheet" href="css/proyect.css">
+  <link rel="stylesheet" href="css/navbar.css">
 </head>
-
 <body>
 <div class="container-nav">
   <nav class="navbar" role="navigation">
-    <a href="index.html" class="brand">Mi página web</a>
+    <a href="#" class="brand">My Website</a>
     <ul class="nav-links">
       <li><a href="index.html">Inicio</a></li>
-      <li><a href="personal.html">Sobre mi</a></li>
-      <li><a href="proyect.html">Proyect</a></li>
+      <li><a href="personal.html">Sobre mí</a></li>
+      <li><a href="proyect.html">Proyectos</a></li>
       <li><a href="contact.html">Contacto</a></li>
     </ul>
   </nav>
   <button class="button-menu-toggle">Menú</button>
 </div>
+<main>
+  <section class="proyectos">
 
-<div class="container">
-  <div class="row">
-    <div class="column">
-      <h1>Nuestros servicios</h1>
-      <p>Descubre aquí los servicios que ofrecemos.</p>
-      <ul>
-        <li>Servicio 1</li>
-        <li>Servicio 2</li>
-        <li>Servicio 3</li>
-      </ul>
+    <h2>Proyectos</h2>
+
+    <div class="java-container">
+      <video autoplay muted loop id="video-background" poster="img/fondo_java_preview.jpg">
+        <source src="img/fondo_java.mp4" type="video/mp4">
+      </video>
+      <h3>Java</h3>
+      <p>My Steps in Java.</p>
+      <a href="#">Ver más</a>
     </div>
-  </div>
-</div>
 
+
+    <div class="container">
+      <h3>Proyecto 2</h3>
+      <p>Descripción del proyecto 2.</p>
+      <a href="#">Ver más</a>
+    </div>
+
+
+
+  </section>
+</main>
 </body>
 </html>
