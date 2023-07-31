@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <title>Mi Primer Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/normalize.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Primer Website</title>
+  <link rel="stylesheet" href="css/body.css">
   <link rel="stylesheet" href="css/main.css">
-  <!-- ... -->
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/navbar.css">
 </head>
-
 <body>
-
-<div class="container-nav">
-  <nav class="navbar" role="navigation">
-    <a href="#" class="brand">Mi página web</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="personal.html">Sobre mi</a></li>
-      <li><a href="proyectos.html">Proyectos</a></li>
-      <li><a href="contact.html">Contacto</a></li>
-    </ul>
-  </nav>
-  <button class="button-menu-toggle">Menú</button>
-</div>
-
-<main>
-  <div class="container">
-    <section>
-      <h2>Presentación</h2>
-      <p>Soy Santiago Scacciaferro, ¡y esta es mi primera página web!</p>
-      <p>Estoy aprendiendo desarrollo web para crear sitios web visualmente atrapantes y funcionales.</p>
-    </section>
-    <section>
-      <h2>Lo que se viene...</h2>
-      <p>A lo largo de este curso, estaré aprendiendo HTML, CSS y JavaScript. Estos lenguajes me ayudarán a crear una base sólida en el desarrollo web front-end.</p>
-    </section>
+  <div class="container-nav">
+    <nav class="navbar" role="navigation">
+      <a href="#" class="brand">My Website</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="personal.html">Sobre mí</a></li>
+        <li><a href="proyect.html">Proyectos</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <button class="button-menu-toggle">Menú</button>
   </div>
-  <button onClick="showAlert()" aria-label="Haz clic en mí">¡Haz clic en mí!</button>
-  <section>
+<main>
+  <section class="intro">
+    <div class="left-container">
+      <div class="my-photo-content">
+        <img src="img/my_photo.jpg" alt="My Photo" class="circular-image">
+      </div>
+      <div class="intro-my-info">
+        <h2>About Me</h2>
+        <p>My name is Santiago Vicente Scacciaferro Wyss.</p>
+        <p>I am studying Systems Engineering, and I'm diving into the world of programming.<br>This is my first webpage project, and I am excited to share more about myself.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="upcoming">
+    <h2>Lo que se viene...</h2>
+    <p>A lo largo de este curso, estaré aprendiendo HTML, CSS y JavaScript. Estos lenguajes me ayudarán a crear una base sólida en el desarrollo web front-end.</p>
+  </section>
+
+  <section class="container1">
+    <button onClick="showAlert()" aria-label="Haz clic en mí">¡Haz clic en mí!</button>
+  </section>
+
+  <section class="container2">
     <video src="https://carontestudio.com/img/f4.mp4" autoplay muted loop controls></video>
   </section>
+
 </main>
-
-<footer>
-  <p>Todos los derechos reservados</p>
+<footer class="footer">
+  <p>All materials © Santiago V. Scacciaferro W. 2023</p>
 </footer>
-
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

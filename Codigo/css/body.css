@@ -1,0 +1,28 @@
+/* Estilos generales para el body */
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+/* Estilos para los encabezados (h1, h2, h3, etc.) */
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+/* Estilos para los párrafos */
+p {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  margin: 10px 0;
+}
+/* Estilos para los enlaces */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+/* Estilos para los enlaces al pasar el ratón */
+a:hover {
+  text-decoration: underline;
+}

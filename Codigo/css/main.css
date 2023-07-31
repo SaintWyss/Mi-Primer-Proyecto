@@ -1,129 +1,100 @@
-body {
-  background-color: lightblue;
-  color: darkblue;
+.intro background {
+  background-image: url("img/fondointro.jpg");
+}
+.intro {
+  padding: 100px 50px;
+  background-image: url("img/fondointro.jpg");
+  background-size: cover;
+}
+.left-container {
+  display: flex;
+  justify-content: center; /* Centrar los elementos horizontalmente */
+  align-items: center; /* Centrar los elementos verticalmente */
+  background-color: rgba(0, 0, 0, 0.8); /* Un fondo negro con opacidad del 50% */
+  padding: 20px; /* Agrega un espaciado interno para separar el contenido del borde */
+  width: 900px; /* Ajustar el ancho del contenedor */
+  height: 250px; /* Ajustar el alto del contenedor */
+}
+.my-photo-content {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Transición para el efecto de rotación */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+.circular-image { /* Estilos para la imagen dentro del contenedor */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.my-photo-content:hover {/* Efecto de rotación al pasar el ratón sobre el contenedor */
+  transform: rotate(360deg);
+}
+.intro-my-info {
+  flex: 1;
+  text-align: left;
+}
+.intro-my-info p {
+  font-size: 18px;
+  font-weight: 700;
   font-family: Arial, sans-serif;
 }
 
-h1 {
-  font-family: Arial;
-  font-size: 36px;
+
+.upcoming, .container1, .container2 {
+  background-image: url("img/fondointro.jpg");
+  text-align: center;
+  padding: 40px 0;
+}
+
+
+.upcoming {
+  background-color: #f8f8f8;
+}
+button {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* Estilos para el botón al pasar el ratón */
+button:hover {
+  background-color: #0056a0;
+}
+
+
+.container1, .container2 {
+  background-color: #f8f8f8;
+}
+
+
+.footer background{
+  background-image: url("img/espacio1.jpg");
+}
+/* Estilos para el footer */
+.footer {
+  background-image: url("img/espacio1.jpg");
+  background-size: cover;
+  color: #00f; /* texto */
+  padding: 20px;
   text-align: center;
 }
-
-p {
-  font-family: Georgia, serif;
-  font-size: 18px;
-  padding: 10px;
-  margin: 20px;
-}
-
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-}
-
-.column {
-  flex: 1;
-  padding: 10px;
-}
-
-.container-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  height: 50px;
-  background-color: black;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  color: whitesmoke;
-  background-color: blueviolet;
-  border: none;
-  border-radius: 50px;
-  padding: 0 24px;
-  font-family: monospace;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
+/* Estilos para el texto del footer */
+.footer p {
+  font-size: 24px;
   margin: 0;
 }
-
-.nav-links li {
-  margin-left: 10px;
-}
-
-a {
-  color: white;
+/* Estilos para el enlace del footer */
+.footer a {
+  color: #00f; /* Color azul (#00f) para el enlace */
   text-decoration: none;
 }
-
-.button-menu-toggle {
-  display: none;
+/* Estilos para el enlace al pasar el ratón sobre el footer */
+.footer a:hover {
+  text-decoration: underline;
 }
 
-main, footer {
-  font-family: Arial;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  .column {
-    flex: 100%;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .button-menu-toggle {
-    display: block;
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 50px;
-    padding: 0 24px;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 20px;
-  }
-
-  .nav-links.nav-links-responsive {
-    position: absolute;
-    display: flex;
-    background-color: rgba(20,20,20,0.95);
-    width: 100%;
-    height: 100%;
-    top: 70px;
-    left: 0;
-    flex-direction: column;
-    padding-top: 200px;
-    align-items: center;
-    gap: 70px;
-    font-size: 40px;
-  }
-}
