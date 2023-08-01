@@ -4,27 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mi Primer Website</title>
-  <link rel="stylesheet" href="css/body.css">
-  <link rel="stylesheet" href="css/proyect.css">
   <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/proyect.css">
 </head>
 <body>
-<div class="container-nav">
-  <nav class="navbar" role="navigation">
-    <a href="#" class="brand">My Website</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="personal.html">Sobre mí</a></li>
-      <li><a href="proyect.html">Proyectos</a></li>
-      <li><a href="contact.html">Contacto</a></li>
-    </ul>
-  </nav>
-  <button class="button-menu-toggle">Menú</button>
-</div>
 <main>
-  <section class="proyectos">
-
-    <h2>Proyectos</h2>
+  <div class="background">
+    <div class="container-nav">
+      <nav class="navbar" role="navigation">
+        <a href="#" class="brand">My Website</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="menu1">Inicio</a></li>
+          <li><a href="personal.html" class="menu2">Sobre mí</a></li>
+          <li><a href="proyect.html" class="menu3">Proyect</a></li>
+          <li><a href="contact.html" class="menu4">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="button-menu-toggle">Menú</button>
+    </div>
+    <section class="intro">
+      <div class="left-container">
+        <div class="my-photo-content">
+          <img src="img/my_photo.jpg" alt="My Photo" class="circular-image">
+        </div>
+        <div class="intro-my-info">
+          <h1>Proyects</h1>
+          <p>Those are my proyects.</p>
+          <p>about them:<br>they are cool</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="proyect">
 
     <div class="java-container">
       <video autoplay muted loop id="video-background" poster="img/fondo_java_preview.jpg">
@@ -35,16 +46,16 @@
       <a href="#">Ver más</a>
     </div>
 
-
     <div class="container">
       <h3>Proyecto 2</h3>
       <p>Descripción del proyecto 2.</p>
       <a href="#">Ver más</a>
     </div>
 
-
-
   </section>
 </main>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
