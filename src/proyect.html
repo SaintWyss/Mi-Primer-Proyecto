@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Esta es una descripción breve de mi primer sitio web.">
+  <meta name="keywords" content="proyectos, Java, Python, desarrollo web">
+  <title>Santiago Scacciaferro | Proyectos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-primary selection:text-slate-900">
+<main class="pt-16">
+  <div class="relative">
+    <!-- Navbar -->
+    <div class="fixed top-0 left-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+      <nav class="flex justify-between items-center max-w-7xl mx-auto px-6 h-16" role="navigation">
+        <a href="index.html" class="text-2xl font-bold text-primary tracking-tight uppercase">My Website</a>
+        <ul class="hidden md:flex gap-8 nav-links">
+          <li><a href="index.html" class="text-slate-400 hover:text-white transition-colors font-medium relative group">Inicio<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a></li>
+          <li><a href="personal.html" class="text-slate-400 hover:text-white transition-colors font-medium relative group">Sobre mí<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a></li>
+          <li><a href="proyect.html" class="text-slate-400 hover:text-white transition-colors font-medium relative group">Proyectos<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a></li>
+          <li><a href="contact.html" class="text-slate-400 hover:text-white transition-colors font-medium relative group">Contacto<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a></li>
+        </ul>
+        <button class="md:hidden text-white text-2xl button-menu-toggle">Menú</button>
+      </nav>
+    </div>
+
+    <!-- Intro Section -->
+    <section class="py-20 px-6 bg-slate-900 text-center">
+      <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 bg-slate-800/30 p-8 rounded-2xl border border-white/5">
+        <div class="w-32 h-32 rounded-full overflow-hidden border-2 border-primary shrink-0">
+          <img src="img/my_photo.jpg" alt="My Photo" class="w-full h-full object-cover">
+        </div>
+        <div class="text-left">
+          <h1 class="text-4xl font-bold text-white mb-2">My Projects</h1>
+          <p class="text-slate-400 text-lg">A collection of my work in software development. From backend logic with Java & Python to modern frontend interfaces.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="proyect">
+    <!-- Java Section -->
+    <section class="java relative py-16 bg-slate-800 overflow-hidden">
+      <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover opacity-10 pointer-events-none">
+        <source src="img/fondo_java.mp4" type="video/mp4">
+      </video>
+      <div class="java-contener relative z-10 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h3 class="text-3xl font-bold text-primary uppercase tracking-widest inline-block relative after:content-[''] after:block after:w-1/2 after:h-1 after:bg-primary after:mx-auto after:mt-2 after:rounded-full">Java Development</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="project-visible bg-slate-900/80 backdrop-blur border border-white/10 p-6 rounded-xl hover:-translate-y-2 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
+            <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center text-4xl">☕</div>
+            <h4 class="text-xl font-semibold text-white mb-2">Inventory System</h4>
+            <p class="text-slate-400 text-sm">Desktop application for managing stock and sales using Java Swing and MySQL.</p>
+          </div>
+          <div class="project-visible bg-slate-900/80 backdrop-blur border border-white/10 p-6 rounded-xl hover:-translate-y-2 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
+            <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center text-4xl">🏦</div>
+            <h4 class="text-xl font-semibold text-white mb-2">Bank Simulator</h4>
+            <p class="text-slate-400 text-sm">Console-based banking system simulating transactions, accounts, and user management.</p>
+          </div>
+          <div class="project-hidden hidden bg-slate-900/80 backdrop-blur border border-white/10 p-6 rounded-xl hover:-translate-y-2 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
+            <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center text-4xl">🎮</div>
+            <h4 class="text-xl font-semibold text-white mb-2">Mini Games Collection</h4>
+            <p class="text-slate-400 text-sm">A suite of classic games (Snake, Tetris) implemented with Java AWT.</p>
+          </div>
+          <div class="project-hidden hidden bg-slate-900/80 backdrop-blur border border-white/10 p-6 rounded-xl hover:-translate-y-2 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
+            <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center text-4xl">📊</div>
+            <h4 class="text-xl font-semibold text-white mb-2">Student Manager</h4>
+            <p class="text-slate-400 text-sm">CRUD application to manage student records and grades.</p>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <button class="show-more-btn px-8 py-3 border-2 border-primary text-primary font-bold rounded-full hover:bg-primary hover:text-slate-900 transition-all duration-300">Ver más</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Python Section -->
+    <section class="python py-16 bg-slate-900">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h3 class="text-3xl font-bold text-yellow-400 uppercase tracking-widest inline-block relative after:content-[''] after:block after:w-1/2 after:h-1 after:bg-yellow-400 after:mx-auto after:mt-2 after:rounded-full">Python & Data</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="project-visible bg-slate-800 border border-white/5 p-6 rounded-xl hover:-translate-y-2 hover:shadow-lg hover:shadow-yellow-400/20 transition-all duration-300">
+            <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center text-4xl">🐍</div>
+            <h4 class="text-xl font-semibold text-white mb-2">Web Scraper</h4>
+            <p class="text-slate-400 text-sm">Automated script to extract data from e-commerce sites using BeautifulSoup.</p>
+          </div>
+          <div class="project-visible bg-slate-800 border border-white/5 p-6 rounded-xl hover:-translate-y-2 hover:shadow-lg hover:shadow-yellow-400/20 transition-all duration-300">
+            <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center text-4xl">🤖</div>
+            <h4 class="text-xl font-semibold text-white mb-2">Discord Bot</h4>
+            <p class="text-slate-400 text-sm">Interactive bot for server management and music playback using discord.py.</p>
+          </div>
+          <div class="project-hidden hidden bg-slate-800 border border-white/5 p-6 rounded-xl hover:-translate-y-2 hover:shadow-lg hover:shadow-yellow-400/20 transition-all duration-300">
+            <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center text-4xl">📈</div>
+            <h4 class="text-xl font-semibold text-white mb-2">Data Analysis</h4>
+            <p class="text-slate-400 text-sm">Exploratory data analysis on public datasets using Pandas and Matplotlib.</p>
+          </div>
+          <div class="project-hidden hidden bg-slate-800 border border-white/5 p-6 rounded-xl hover:-translate-y-2 hover:shadow-lg hover:shadow-yellow-400/20 transition-all duration-300">
+            <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center text-4xl">🔐</div>
+            <h4 class="text-xl font-semibold text-white mb-2">Password Manager</h4>
+            <p class="text-slate-400 text-sm">Secure CLI tool to store and retrieve encrypted passwords.</p>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <button class="show-more-btn px-8 py-3 border-2 border-yellow-400 text-yellow-400 font-bold rounded-full hover:bg-yellow-400 hover:text-slate-900 transition-all duration-300">Ver más</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="py-8 bg-slate-900 border-t border-slate-800 text-center text-slate-500">
+  <div class="space-y-2">
+    <p>All materials © Santiago V. Scacciaferro W. 2023</p>
+    <p>Email: <a href="mailto:Santiagov.scacciaferrow@gmail.com" class="text-primary hover:underline">Santiagov.scacciaferrow@gmail.com</a></p>
+    <p>Social: <a href="https://www.linkedin.com/in/santiago-vicente-scacciaferro-wyss-48b69a223/" target="_blank" class="text-primary hover:underline">LinkedIn</a></p>
+  </div>
+</footer>
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>

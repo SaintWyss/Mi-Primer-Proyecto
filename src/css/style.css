@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles that are not yet migrated to Tailwind can go here */
+/* We will import the old CSS files temporarily or rewrite them */
+
+body {
+  @apply bg-slate-900 text-slate-100 font-sans;
+}
+
+/* Glassmorphism utility */
+.glass {
+  @apply bg-slate-800/50 backdrop-blur-md border border-white/10 shadow-lg;
+}
