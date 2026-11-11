@@ -1,4 +1,7 @@
-# Portafolio Personal - Santiago Scacciaferro
+<h1 align="center">Mi-Primer-Proyecto</h1>
+
+<p align="center"><strong>Portfolio personal de Santiago Scacciaferro Wyss.</strong><br/>Frontend · Vite · Tailwind</p>
+
 
 Este es mi portafolio personal, una aplicación web moderna diseñada para mostrar mi trayectoria como estudiante de Ingeniería en Sistemas y desarrollador de software. El proyecto ha evolucionado desde un sitio estático básico a una aplicación web optimizada utilizando herramientas de desarrollo modernas.
 
