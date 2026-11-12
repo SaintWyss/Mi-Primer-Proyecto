@@ -3,11 +3,13 @@
 <p align="center"><strong>Portfolio personal de Santiago Scacciaferro Wyss.</strong><br/>Frontend · Vite · Tailwind</p>
 
 
-Este es mi portafolio personal, una aplicación web moderna diseñada para mostrar mi trayectoria como estudiante de Ingeniería en Sistemas y desarrollador de software. El proyecto ha evolucionado desde un sitio estático básico a una aplicación web optimizada utilizando herramientas de desarrollo modernas.
+Este repositorio conserva una versión de mi portafolio personal, con secciones de presentación, proyectos y contacto. Evolucionó desde un sitio estático hacia una aplicación construida con Vite y Tailwind CSS.
+
+**Estado:** proyecto personal histórico. Su contenido puede no reflejar mi trayectoria o mis proyectos más recientes; para una presentación actual, visitá [mi perfil de GitHub](https://github.com/SaintWyss).
 
 ## 🚀 Tecnologías
 
-El proyecto utiliza un stack tecnológico moderno enfocado en el rendimiento y la experiencia de desarrollo:
+Tecnologías principales:
 
 - **[Vite](https://vitejs.dev/):** Entorno de desarrollo frontend de próxima generación, ultrarrápido.
 - **[Tailwind CSS](https://tailwindcss.com/):** Framework CSS "utility-first" para un diseño rápido, responsivo y mantenible.
@@ -38,14 +40,21 @@ El proyecto utiliza un stack tecnológico moderno enfocado en el rendimiento y l
 └── vite.config.js      # Configuración de Vite
 ```
 
-## 🛠️ Instalación y Uso
+## 🛠️ Instalación y uso
 
-Para ejecutar este proyecto localmente, necesitarás tener instalado [Node.js](https://nodejs.org/).
+Para ejecutar el proyecto necesitás [Node.js](https://nodejs.org/) y npm. Cloná el repositorio y entrá a su carpeta antes de ejecutar los comandos:
+
+```bash
+git clone https://github.com/SaintWyss/Mi-Primer-Proyecto.git
+cd Mi-Primer-Proyecto
+```
+
+El repositorio contiene una carpeta `node_modules` versionada. Si las dependencias incluidas no funcionan en tu sistema, instalá las dependencias de nuevo; la compilación no se pudo verificar en esta revisión.
 
 1.  **Instalar dependencias:**
 
     ```bash
-    npm install
+    npm ci
     ```
 
 2.  **Iniciar servidor de desarrollo:**
