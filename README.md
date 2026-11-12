@@ -16,11 +16,17 @@ Tecnologías principales:
 - **HTML5 & JavaScript (ES6+):** Estándares web modernos.
 - **PostCSS:** Herramienta para transformar CSS con JavaScript.
 
+## Arquitectura y diseño
+
+El sitio es una aplicación web **multipágina**: Vite toma los HTML de `src/` como puntos de entrada, procesa los estilos con Tailwind CSS y PostCSS y genera los archivos estáticos en `dist/`. Los recursos compartidos se encuentran en `public/`, mientras que `src/css/` y `src/js/` reúnen estilos y comportamiento del frontend.
+
+La interfaz usa un tema oscuro y adapta sus secciones a distintos tamaños de pantalla. El proyecto es una versión histórica del portfolio; su contenido no debe interpretarse como una presentación actualizada de la trayectoria.
+
 ## ✨ Características
 
 - **Diseño Moderno:** Interfaz limpia y profesional con modo oscuro (Dark Mode) por defecto.
 - **Responsive Design:** Totalmente adaptado a dispositivos móviles, tablets y escritorio.
-- **Alto Rendimiento:** Optimizado para carga rápida gracias al bundler de Vite.
+- **Build estático:** Vite genera los recursos listos para servir como archivos estáticos.
 - **Estructura Modular:** Código organizado en una arquitectura basada en `src/` para mejor mantenibilidad.
 
 ## 📂 Estructura del Proyecto
@@ -49,7 +55,7 @@ git clone https://github.com/SaintWyss/Mi-Primer-Proyecto.git
 cd Mi-Primer-Proyecto
 ```
 
-El repositorio contiene una carpeta `node_modules` versionada. Si las dependencias incluidas no funcionan en tu sistema, instalá las dependencias de nuevo; la compilación no se pudo verificar en esta revisión.
+El repositorio contiene una carpeta `node_modules` versionada, que puede no funcionar en otros sistemas. En una copia limpia, `npm ci` y `npm run build` se completaron correctamente en la revisión de noviembre de 2026.
 
 1.  **Instalar dependencias:**
 
